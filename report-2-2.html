@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contender Report</title>
+    <!--
+
+    (¯`·¯`·.¸¸.·´¯`·.¸¸.·´¯`··´¯)
+    ( \                       / )
+     ( ) Design by @deadpine ( ) 
+      (/                     \)  
+       (.·´¯`·.¸¸.·´¯`·.¸¸.·´)
+
+    -->
+    <style>
+
+@font-face {
+  font-family: 'CMU-Serif';
+  src: url('./fonts/cmunbx.ttf') format('truetype');
+  style: bold;
+  weight: bold; 
+  stretch: 100;
+}
+@font-face {
+  font-family: 'CMU-Serif';
+  src: url('./fonts/cmunci.ttf') format('truetype');
+  style: italic;
+  weight: 400; 
+  stretch: 100;
+}
+@font-face {
+  font-family: 'CMU-Serif';
+  src: url('./fonts/cmunrm.ttf') format('truetype');
+  style: normal;
+  weight: 400; 
+  stretch: 100;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'CMU-Serif', serif;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0D0D0D;
+}
+
+header {
+  padding: 4rem 1rem 2rem;
+  text-align: center;
+}
+
+header p {
+  font-style: italic;
+  padding: .25rem 0;
+  margin: 0;
+}
+
+section {
+  max-width: 39rem;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  color: #0D0D0D;
+  text-align: center;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0 .5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.source {
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
+
+footer p {
+  text-align: center;
+  font-size: .9rem;
+  padding: 1rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flashbots <br/> Chain Performance Report</h1>
+        <p>Fri, 7 Feb 2025 12:17:20 -0800</p>
+        <p>Scenario: uniV3</p>
+        <p>Target Chain: http://experi-proxy-dcb3yn8uzjpc-196463883.us-east-2.elb.amazonaws.com/</p>
+        <p>Block Range: 9149520 - 9149542</p>
+    </header>
+
+    <section>
+        <h2>
+            Storage Slot Heatmap
+        </h2>
+        <img src="/Users/brock/.contender/reports/heatmap_run-2-2.png" alt="Storage Slot Heatmap">
+        <div style="page-break-after: always;"></div>
+    </section>
+    <section>
+        <h2>
+            Gas Per Block
+        </h2>
+        <img src="/Users/brock/.contender/reports/gas_per_block_run-2-2.png" alt="Gas Per Block">
+        <div style="page-break-after: always;"></div>
+    </section>
+    <section>
+        <h2>
+            Time To Inclusion
+        </h2>
+        <img src="/Users/brock/.contender/reports/time_to_inclusion_run-2-2.png" alt="Time To Inclusion">
+        <div style="page-break-after: always;"></div>
+    </section>
+    <section>
+        <h2>
+            Tx Gas Used
+        </h2>
+        <img src="/Users/brock/.contender/reports/tx_gas_used_run-2-2.png" alt="Tx Gas Used">
+        <div style="page-break-after: always;"></div>
+    </section>
+
+    <footer>
+        <p>Flashbots 2025 ©</p>
+    </footer>
+
+</body>
+</html>
